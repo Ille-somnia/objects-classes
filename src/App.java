@@ -10,17 +10,17 @@ public class App {
         Book book = new Book("Java. Полное руководство", author, 2010);
         Book book1 = new Book("Чистый код", author1, 2017);
 
-        System.out.println("Автор: " + author.getFirstName() + " " + author.getLastName());
+        System.out.println("Автор: " + author);
         System.out.println("Книга: " + book.getTitle());
         System.out.println("Год выпуска: " + book.getPublishingYear());
 
-        System.out.println("Автор: " + author1.getFirstName() + " " + author1.getLastName());
+        System.out.println("Автор: " + author1);
         System.out.println("Книга: " + book1.getTitle());
         System.out.println("Год выпуска: " + book1.getPublishingYear());
 
         book.setPublishingYear(2022);
 
-        System.out.println("Автор: " + author.getFirstName() + " " + author.getLastName());
+        System.out.println("Автор: " + author);
         System.out.println("Книга: " + book.getTitle());
         System.out.println("Год выпуска: " + book.getPublishingYear());
 
