@@ -1,0 +1,29 @@
+import java.util.Objects;
+
+public class App {
+    public static void main(String[] args) {
+        System.out.println("library guide");
+
+        Author author = new Author("Герберт", "Шилдт");
+        Author author1 = new Author("Роберт", "Мартин");
+
+        Book book = new Book("Java. Полное руководство", author, 2010);
+        Book book1 = new Book("Чистый код", author1, 2017);
+
+        System.out.println("Автор: " + author.getFirstName() + " " + author.getLastName());
+        System.out.println("Книга: " + book.getTitle());
+        System.out.println("Год выпуска: " + book.getPublishingYear());
+
+        System.out.println("Автор: " + author1.getFirstName() + " " + author1.getLastName());
+        System.out.println("Книга: " + book1.getTitle());
+        System.out.println("Год выпуска: " + book1.getPublishingYear());
+
+        book.setPublishingYear(2022);
+
+        System.out.println("Автор: " + author.getFirstName() + " " + author.getLastName());
+        System.out.println("Книга: " + book.getTitle());
+        System.out.println("Год выпуска: " + book.getPublishingYear());
+
+
+    }
+}
