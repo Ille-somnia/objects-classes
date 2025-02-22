@@ -6,7 +6,7 @@ public class Author {
 
     @Override
     public String toString() {
-        return firstName + " " + lastName;
+        return  firstName + " " + lastName;
     }
 
     public Author(String firstName, String lastName) {
@@ -20,6 +20,18 @@ public class Author {
 
     public String getLastName() {
         return lastName;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Author author = (Author) o;
+        return Objects.equals(firstName, author.firstName) && Objects.equals(lastName, author.lastName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, lastName);
     }
 }
 
